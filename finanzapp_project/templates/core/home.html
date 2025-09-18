@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        .logo { font-size: 3rem; color: #667eea; margin-bottom: 1rem; }
+        h1 { color: #333; margin-bottom: 0.5rem; }
+        .version { color: #666; margin-bottom: 1.5rem; }
+        .status { background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #28a745; }
+        .links { margin-top: 1.5rem; }
+        .link { 
+            display: inline-block; 
+            background: #667eea; 
+            color: white; 
+            padding: 0.7rem 1.5rem; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            margin: 0.5rem;
+        }
+        .link:hover { background: #5a67d8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">💰</div>
+        <h1>{{ title }}</h1>
+        <div class="version">{{ version }}</div>
+        <div class="status">
+            <strong>🟢 Servicio Activo</strong><br>
+            {{ server_info }}<br>
+            Acceso público: https://finanzapp.ngrok.io
+        </div>
+        <div class="links">
+            <a href="/status/" class="link">📊 API Status</a>
+            <a href="/test/" class="link">🧪 API Test</a>
+            <a href="/admin/" class="link">⚙️ Admin</a>
+        </div>
+    </div>
+</body>
+</html>
