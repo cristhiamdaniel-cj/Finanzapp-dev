@@ -29,3 +29,9 @@ Thumbs.db
 # Project specific
 *.log
 .env
+
+# Shell scripts (setup, deployment, etc.)
+*.sh
+
+# Project specific virtual environment
+venv_finanzapp/
