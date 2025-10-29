@@ -1,37 +1,52 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.db
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Django
 *.sqlite3
+db.sqlite3
+finanzapp_project/finanzapp_project/settings.py
+!finanzapp_project/finanzapp_project/settings.example.py
+local_settings.py
+/staticfiles/
+/media/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.prod
+
+# Virtual Environment
 venv/
 venv_*/
-.venv/
 env/
-
-# Node.js
-node_modules/
-npm-debug.log
-package-lock.json
+.venv/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Project specific
+# Logs
 *.log
-.env
+logs/
 
-# Shell scripts (setup, deployment, etc.)
-*.sh
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# Project specific virtual environment
-venv_finanzapp/
+# Backup files
+.*.backup
+*.backup
