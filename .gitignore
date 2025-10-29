@@ -50,3 +50,4 @@ yarn-error.log
 # Backup files
 .*.backup
 *.backup
+finanzapp_project/db.sqlite3
